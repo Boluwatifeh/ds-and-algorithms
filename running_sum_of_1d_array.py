@@ -7,3 +7,6 @@ class Solution:
             nums[i] += nums[i-1]
             result.append(nums[i])
         return result
+# test input [1,2,3,4] -> output [1, 3, 7, 10] i.e [1, 1+2, 1+2+3, 1+2+3+4]
+test = Solution()
+print(test.runningSum([1,2,3,4]))
