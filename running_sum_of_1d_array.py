@@ -12,7 +12,7 @@ test = Solution()
 print(test.runningSum([1,2,3,4]))
 
 
-#using list comprehension
+#using list comprehension note that this takes O(n^2) this is because of the for loop and the sum() function being called.
 def running_sum(nums: list[int]) -> list[int]:
     return [sum(nums[:i+1]) for i in range(len(nums))] 
 #test input [2,34,6,9,7] -> expected output [2, 36, 42, 51, 58]
