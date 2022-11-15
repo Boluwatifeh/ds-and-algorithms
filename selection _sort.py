@@ -5,9 +5,7 @@ def selectionSort(unsorted_list):
         for j in range(i+1, len(unsorted_list)):
             if unsorted_list[j] < unsorted_list[i]:
                 min_val = j
-        temp = unsorted_list[i]
-        unsorted_list[i] = unsorted_list[min_val]
-        unsorted_list[min_val] = temp
+        unsorted_list[i], unsorted_list[min_val] = unsorted_list[min_val], unsorted_list[i]
     
 
 nums = [5,3,8,6,7,2]
