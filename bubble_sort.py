@@ -1,8 +1,8 @@
 def bubble_sort(nums:list[int]):
-    for j in range(len(nums)):
-        for i in range(len(nums)-1):
-            if nums[i] > nums[i+1]:
-                nums[i], nums[i+1] = nums[i+1], nums[i]
+    for i in range(len(nums)):
+        for j in range(len(nums)-1):
+            if nums[j] > nums[j+1]:
+                nums[j], nums[j+1] = nums[j+1], nums[j]
     return (f"sorted list in ascending order -> {nums}")
             
 
