@@ -14,3 +14,10 @@ class Linkedlist:
     
     def is_empty(self):
         return self.head == None
+    def size(self):
+        current = self.head
+        count = 0 
+        while current != None:
+            count += 1
+            current = current.next_node
+        return count
